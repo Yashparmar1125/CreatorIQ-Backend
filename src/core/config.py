@@ -34,9 +34,14 @@ class Settings(BaseSettings):
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 15
     REFRESH_TOKEN_EXPIRE_DAYS: int = 90
 
-    # External APIs
+    # Currently hardcoding API keys for testing, but these should be set via environment variables in production
+    YOUTUBE_API_KEY: Optional[str] = "AIzaSyB1kLHFa6WiXm9jXY0s-rgxCgNHpIyLFHU"
     YOUTUBE_CLIENT_ID: Optional[str] = None
     YOUTUBE_CLIENT_SECRET: Optional[str] = None
+    
+    # For now i am putting it here 
+    GEMINI_API_KEY: Optional[str] = "AIzaSyCdizPkpTLtuqFICqRGrFEwHptVJ5HGhkU"
+    GEMINI_MODEL: str = "gemini-3-flash-preview"
     SERPAPI_API_KEY: Optional[str] = None
     ANTHROPIC_API_KEY: Optional[str] = None
 
