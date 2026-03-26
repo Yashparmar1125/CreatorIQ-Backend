@@ -20,6 +20,7 @@ scikit-learn>=1.5.0
 # Integrations
 google-api-python-client>=2.122.0
 google-auth-oauthlib>=1.2.0
+pytrends>=4.9.2
 anthropic>=0.25.0
 # Utilities
 pytz>=2024.1
